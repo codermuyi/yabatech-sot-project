@@ -13,11 +13,12 @@ const Navbar = () => {
           <span className='text-xs'>P.M.B 2011,YABA, LAGOS. NIGERIA.</span>
         </div>
       </div>
-      <div className='hidden md:block'>
-        <img src={hamburger} width='30' height='30' />
-      </div>
       <div className='md:hidden'>
-
+        <button onClick={() => console.log('Clicked')}>
+          <img src={hamburger} width='30' height='30' />
+        </button>
+      </div>
+      <div className='hidden md:block'>
       </div>
     </div>
   )
