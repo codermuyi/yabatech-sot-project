@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import React, { forwardRef } from 'react'
 import { Link } from 'react-router-dom'
+import { twMerge } from 'tailwind-merge'
 
 const Button = forwardRef((props, ref) => {
   const {
@@ -18,12 +19,14 @@ const Button = forwardRef((props, ref) => {
     ...rest
   } = props
 
-  const rootClassName = cn(
-    'p-3 w-32 bg-green-600 md:text-sm leading-4 inline-flex items-center transition ease-in-out duration-300 font-body text-center justify-center rounded',
-    {
-      'mx-auto': center,
-    },
-    className
+  const rootClassName = twMerge(
+    cn(
+      'p-3 w-32 bg-green-600 md:text-sm leading-4 inline-flex items-center transition ease-in-out duration-300 font-body text-center justify-center rounded',
+      {
+        'mx-auto': center,
+      },
+      className
+    )
   )
 
   if (linkType === 'abs')
