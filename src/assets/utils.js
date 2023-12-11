@@ -1,5 +1,5 @@
 
-const navLinks = [
+export const navLinks = [
   {
     text: 'Home',
     link: '/',
@@ -10,14 +10,14 @@ const navLinks = [
   },
   {
     text: 'Lecturers Profile',
-    link: 'lecturer-profile',
+    link: '/lecturer-profile',
   },
   {
     text: 'Courses',
-    link: 'courses',
+    link: '/courses',
   },
   {
-    text: '',
-    link: '',
+    text: 'Admission Requirements',
+    link: '/admission-requirements',
   },
 ]
