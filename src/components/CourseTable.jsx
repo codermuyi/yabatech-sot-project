@@ -39,8 +39,8 @@ const NDTable = ({ data }) => {
       </thead>
       <tbody>
         {data.map((item, key) => (
-          <tr key={key} className="border dark:border-neutral-500">
-            <td className="whitespace-nowrap px-4 py-2 font-medium  border-r border-neutral-500">
+          <tr key={key} className="border dark:border-neutral-500 font-bold">
+            <td className="whitespace-nowrap px-4 py-2 border-r border-neutral-500">
               {item.code}
             </td>
             <td className="whitespace-nowrap px-4 py-2  border-r border-neutral-500">
@@ -86,8 +86,8 @@ const HNDTable = ({ data }) => {
       </thead>
       <tbody>
         {data.map((item, key) => (
-          <tr key={key} className="border dark:border-neutral-500">
-            <td className="whitespace-nowrap px-4 py-2 font-medium  border-r border-neutral-500">
+          <tr key={key} className="border dark:border-neutral-500 font-bold">
+            <td className="whitespace-nowrap px-4 py-2 border-r border-neutral-500">
               {item.code}
             </td>
             <td className="whitespace-nowrap px-4 py-2  border-r border-neutral-500">
