@@ -1,3 +1,5 @@
+import srcS from '../assets/Rectangle 137.png'
+
 
 export const navLinks = [
   {
@@ -19,5 +21,43 @@ export const navLinks = [
   {
     text: 'Admission Requirements',
     link: '/admission-requirements',
+  },
+]
+
+export const lecturers = [
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
+  },
+  {
+    name: 'Dolor Sit Amet',
+    course: 'COM 223',
+    image: srcS,
   },
 ]

@@ -1,0 +1,821 @@
+{
+  "programs": {
+    "fulltime": {
+      "nd1": {
+        "first": [
+          {
+            "code": "COM 111",
+            "title": "Introduction to Computing",
+            "category": "C"
+          },
+          {
+            "code": "COM 112",
+            "title": "Introduction to Digital Electronics",
+            "category": "C"
+          },
+          {
+            "code": "COM 113",
+            "title": "Introduction to Programming",
+            "category": "C"
+          },
+          {
+            "code": "COM 115",
+            "title": "Introduction to Linux Operating System",
+            "category": "C"
+          },
+          {
+            "code": "COM 116",
+            "title": "Statistics for Computing",
+            "category": "C"
+          },
+          {
+            "code": "COM 117",
+            "title": "Computer Application Packages I",
+            "category": "C"
+          },
+          {
+            "code": "GNS 101",
+            "title": "Use of English",
+            "category": "C"
+          },
+          {
+            "code": "GNS 127",
+            "title": "Citizenship Education",
+            "category": "C"
+          },
+          {
+            "code": "MTH 111",
+            "title": "Logic & Linear Algebra",
+            "category": "C"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 121",
+            "title": "Programming Language Using Java I",
+            "category": "C"
+          },
+          {
+            "code": "COM 122",
+            "title": "Introduction to Internet",
+            "category": "C"
+          },
+          {
+            "code": "COM 124",
+            "title": "Data Structures & Algorithms",
+            "category": "C"
+          },
+          {
+            "code": "COM 125",
+            "title": "Introduction to System Analysis",
+            "category": "C"
+          },
+          {
+            "code": "COM 126",
+            "title": "PC Upgrade & Maintenance",
+            "category": "C"
+          },
+          {
+            "code": "COM 127",
+            "title": "Programming in C",
+            "category": "C"
+          },
+          {
+            "code": "COM 128",
+            "title": "Introduction to Discrete Math.",
+            "category": "C"
+          },
+          {
+            "code": "EED 126",
+            "title": "Introduction to Entrepreneurship",
+            "category": "C"
+          },
+          {
+            "code": "GNS 102",
+            "title": "Communication in English I",
+            "category": "C"
+          },
+          {
+            "code": "GNS 121",
+            "title": "Citizenship Education II",
+            "category": "C"
+          }
+        ]
+      },
+      "nd2": {
+        "first": [
+          {
+            "code": "COM 211",
+            "title": "Programming Language Using Java II",
+            "category": "C"
+          },
+          {
+            "code": "COM 212",
+            "title": "Introduction to System Programming",
+            "category": "C"
+          },
+          {
+            "code": "COM 213",
+            "title": "Introduction to Unified Modelling Language",
+            "category": "C"
+          },
+          {
+            "code": "COM 214",
+            "title": "File Organization & Management",
+            "category": "C"
+          },
+          {
+            "code": "COM 215",
+            "title": "Computer Application Packages II",
+            "category": "C"
+          },
+          {
+            "code": "COM 218",
+            "title": "Statistics for Computing II",
+            "category": "C"
+          },
+          {
+            "code": "EED 216",
+            "title": "Entrepreneurship Development II",
+            "category": "C"
+          },
+          {
+            "code": "GNS 201",
+            "title": "Use of English II",
+            "category": "C"
+          },
+          {
+            "code": "SIE 201",
+            "title": "SIWES",
+            "category": "C"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 220",
+            "title": "Computing Networking",
+            "category": "C"
+          },
+          {
+            "code": "COM 222",
+            "title": "Seminar On Computer & Society",
+            "category": "C"
+          },
+          {
+            "code": "COM 223",
+            "title": "Basic Hardware Maintenance",
+            "category": "C"
+          },
+          {
+            "code": "COM 224",
+            "title": "Management Information System(MIS)",
+            "category": "C"
+          },
+          {
+            "code": "COM 225",
+            "title": "Data Web Technology",
+            "category": "C"
+          },
+          {
+            "code": "COM 226",
+            "title": "Computer System Troubleshooting",
+            "category": "C"
+          },
+          {
+            "code": "COM 227",
+            "title": "Computer Security (Elective)",
+            "category": "C"
+          },
+          {
+            "code": "COM 228",
+            "title": "Mobile Application Development (Elective)",
+            "category": "C"
+          },
+          { "code": "COM 229", "title": "Project", "category": "C" },
+          {
+            "code": "GNS 202",
+            "title": "Communication In English",
+            "category": "C"
+          },
+          { "code": "MTH 209", "title": "Calculus", "category": "C" }
+        ]
+      },
+      "hnd1": {
+        "first": [
+          {
+            "code": "COM 311",
+            "title": "Operating System I",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 312",
+            "title": "Database Design I",
+            "T": 2,
+            "P": 3,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 313",
+            "title": "Computer Prog. Using C++",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 314",
+            "title": "Computer Architecture",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 317",
+            "title": "Numerical Methods",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 318",
+            "title": "Operations Research I",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "MTH 312",
+            "title": "Advanced Calculus",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CF"
+          },
+          {
+            "code": "MTH 311",
+            "title": "Advanced Algebra",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CF"
+          },
+          {
+            "code": "STA 311",
+            "title": "Statistics Theory I",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 301",
+            "title": "Use of English III",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 321",
+            "title": "Operating System II",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 322",
+            "title": "Database Design II",
+            "T": 2,
+            "P": 3,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 323",
+            "title": "Assembly Language",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 324",
+            "title": "Intro. to Software Eng.",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 325",
+            "title": "Computer Techniques (JAVA)",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 326",
+            "title": "Intro to Human Comp. Interaction",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "MTH 321",
+            "title": "Statistics Theory II",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "MTH 302",
+            "title": "Communication in Eng. III",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          },
+          {
+            "code": "STA 316",
+            "title": "Entrepreneurship Development",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          },
+          {
+            "code": "GNS 304",
+            "title": "Research Methodology",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ]
+      },
+      "hnd2": {
+        "first": [
+          {
+            "code": "COM 410",
+            "title": "Multimedia",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 411",
+            "title": "Seminar on current Computing Topics",
+            "T": 2,
+            "P": null,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 412",
+            "title": "Programming in O.O PASCAL",
+            "T": 2,
+            "P": 3,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 413",
+            "title": "Project Management",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 414",
+            "title": "Complier Construction",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 415",
+            "title": "Data Comm. & Networks",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "GNS 401",
+            "title": "Use of English IV",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          },
+          {
+            "code": "EED 413",
+            "title": "Entrepreneurship Development",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 422",
+            "title": "Computer Graphics & Animation",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 423",
+            "title": "Al & Expert System",
+            "T": 2,
+            "P": 3,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 424",
+            "title": "Professional Practice in IT",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 425",
+            "title": "Intro to Modelling & Simulation",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 428",
+            "title": "Operations Research II",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 429",
+            "title": "Project",
+            "T": 4,
+            "P": 2,
+            "U": 4,
+            "category": "C"
+          },
+          {
+            "code": "GNS 402",
+            "title": "Literary Appreciation & Composition",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 323",
+            "title": "Psychology",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CF"
+          },
+          {
+            "code": "GNS 425",
+            "title": "Law of Contract",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CF"
+          }
+        ]
+      }
+    },
+    "parttime": {
+      "hnd1": {
+        "first": [
+          {
+            "code": "COM 311",
+            "title": "Operating System I",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 312",
+            "title": "Database Design I",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 313",
+            "title": "Computer Programming using C++",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "MTH 311",
+            "title": "Advanced Algebra",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "STA 311",
+            "title": "Statistics Theory I",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 301",
+            "title": "Use of English III",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 321",
+            "title": "Operating System II",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 322",
+            "title": "Database Design II",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 325",
+            "title": "Computer Techniques (JAVA)",
+            "T": 2,
+            "P": null,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "STA 321",
+            "title": "Statistics Theory II",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 302",
+            "title": "Communication in English III",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          },
+          {
+            "code": "EED 316",
+            "title": "Entrepreneurship Development I",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ]
+      },
+      "hnd2": {
+        "first": [
+          {
+            "code": "COM 314",
+            "title": "Computer Architecture",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 415",
+            "title": "Data Communications & Networks",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 317",
+            "title": "Numerical Methods",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 318",
+            "title": "Operations Research I",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "MTH 312",
+            "title": "Advanced Calculus",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "EED 413",
+            "title": "Entrepreneurship Development II",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 324",
+            "title": "Intro to Software Engineering",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 326",
+            "title": "Intro to Human Computer Interaction",
+            "T": 2,
+            "P": null,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 422",
+            "title": "Computer Graphics & Animation",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 424",
+            "title": "Professional Practice in IT",
+            "T": 2,
+            "P": null,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "GNS 304",
+            "title": "Research Methodology",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 323",
+            "title": "Intro to Psychology",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ]
+      },
+      "hnd3": {
+        "first": [
+          {
+            "code": "COM 411",
+            "title": "Seminar on Current Computing Topics",
+            "T": 2,
+            "P": null,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 412",
+            "title": "Programming in O.O PASCAL",
+            "T": 2,
+            "P": 3,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 413",
+            "title": "Project Management",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 414",
+            "title": "Compiler Construction",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 410",
+            "title": "Multi Media",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "GNS 401",
+            "title": "Communication in English IV",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "CG"
+          }
+        ],
+        "second": [
+          {
+            "code": "COM 323",
+            "title": "Assembly Language",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 423",
+            "title": "Al & Expert System",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 428",
+            "title": "Operations Research II",
+            "T": 2,
+            "P": 2,
+            "U": 3,
+            "category": "C"
+          },
+          {
+            "code": "COM 429",
+            "title": "Project",
+            "T": 4,
+            "P": null,
+            "U": 4,
+            "category": "C"
+          },
+          {
+            "code": "COM 425",
+            "title": "Law of Contract",
+            "T": 2,
+            "P": null,
+            "U": 2,
+            "category": "C"
+          },
+          {
+            "code": "GNS 402",
+            "title": "Literary appreciation and Oral Composition",
+            "T": 2,
+            "P": 2,
+            "U": 2,
+            "category": "CG"
+          }
+        ]
+      }
+    }
+  }
+}
