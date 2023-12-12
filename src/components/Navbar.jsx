@@ -6,7 +6,7 @@ import hamburger from '../assets/hamburger.svg'
 
 const Navbar = ({ isSidebarOpen, toggleSidebar, children }) => {
   return (
-    <div className="flex justify-between items-center bg-[#E9EFFF] p-2">
+    <div className="flex justify-between items-center bg-bluey p-2">
       <div className="flex gap-2">
         <Link to="/">
           <img src="/logo.svg" alt="Yabatech Logo" width="40" height="40" />

@@ -10,7 +10,8 @@ export default {
         primary: '#005403',
         secondary: '#ecffed',
         active: '#FFA300',
-        third: '#C6EFFF'
+        third: '#C6EFFF',
+        bluey: '#E9EFFF'
       }
     },
   },

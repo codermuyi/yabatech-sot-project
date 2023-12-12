@@ -33,7 +33,7 @@ const social = [
 
 const Footer = () => {
   return (
-    <div className="bg-[#505050] p-5 text-white grid gap-10 grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] justify-center lg:py-10">
+    <div className="bg-[#505050] p-5 text-white grid gap-10 grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] justify-center lg:py-10 overflow-hidden">
       <div className="flex justify-center self-end">
         {social.map((v, i) => (
           <a key={i} href={v.link} aria-label={v.name}>
@@ -52,7 +52,7 @@ const Footer = () => {
             placeholder="Subscribe to email updates"
             className="w-full h-12 p-3 bg-transparent border-b border-gray-500"
           />
-          <Button className="bg-green-700 w-72 p-1 h-12">Submit</Button>
+          <Button className="bg-green-700 w-72 p-1">Submit</Button>
         </form>
       </div>
       <div>
