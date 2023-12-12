@@ -8,15 +8,17 @@ import LecturerProfile from './pages/LecturerProfile'
 import Courses from './pages/Courses'
 import AdmissionRequirements from './pages/AdmissionRequirements'
 import ErrorPage from './pages/ErrorPage'
+import ContactUs from './pages/ContactUs';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />} errorElement={<ErrorPage />}>
       <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="lecturer-profile" element={<LecturerProfile />} />
-      <Route path="courses" element={<Courses />} />
-      <Route path="admission-requirements" element={<AdmissionRequirements />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/lecturer-profile" element={<LecturerProfile />} />
+      <Route path="/courses" element={<Courses />} />
+      <Route path="/admission-requirements" element={<AdmissionRequirements />} />
+      <Route path="/contact" element={<ContactUs />} />
     </Route>
   )
 )
