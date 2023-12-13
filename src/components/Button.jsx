@@ -31,14 +31,19 @@ const Button = forwardRef((props, ref) => {
 
   if (linkType === 'abs')
     return (
-      <a href={href} className={rootClassName} aria-label={ariaLabel}>
+      <a href={href} className={rootClassName} aria-label={ariaLabel} {...rest}>
         {children}
       </a>
     )
 
   if (linkType === 'rel')
     return (
-      <Link to={href} className={rootClassName} aria-label={ariaLabel}>
+      <Link
+        to={href}
+        className={rootClassName}
+        aria-label={ariaLabel}
+        {...rest}
+      >
         {children}
       </Link>
     )

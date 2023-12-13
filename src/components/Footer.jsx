@@ -59,7 +59,7 @@ const Footer = () => {
         <p className="text-3xl text-center my-5">Quick Links</p>
         <div className='grid gap-3 text-center'>
           {navLinks.map((v, i) => (
-            <Link key={i} className='' href={v.link}>{v.text}</Link>
+            <Link key={i} to={v.link}>{v.text}</Link>
           ))}{' '}
         </div>
       </div>

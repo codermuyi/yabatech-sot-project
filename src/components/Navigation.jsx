@@ -11,7 +11,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleSidebar = () => setIsOpen((prev) => !prev)
 
-  const overlayClassName = cn('fixed inset-0 ', {
+  const overlayClassName = cn('fixed inset-0 lg:hidden', {
     'z-1 bg-black/30': isOpen === true,
     'z-[-1] transparent': isOpen === false,
   })
@@ -21,10 +21,12 @@ const Navigation = () => {
       key={i}
       to={link.link}
       onClick={() => setIsOpen(false)}
-      className={({ isActive }) => [
-        'hover:bg-active/30 p-2 transition rounded text-sm',
-        isActive ? 'text-active border-b-4 border-active' : ''
-      ].join(' ')}
+      className={({ isActive }) =>
+        [
+          'hover:bg-active/30 p-2 transition rounded text-sm',
+          isActive ? 'text-active border-b-4 border-active' : '',
+        ].join(' ')
+      }
     >
       {link.text}
     </NavLink>
@@ -32,7 +34,7 @@ const Navigation = () => {
 
   return (
     <>
-      <Sidebar toggle={toggleSidebar} isOpen={isOpen}>
+      <Sidebar toggle={toggleSidebar} isOpen={isOpen} setIsOpen={setIsOpen}>
         {links}
       </Sidebar>
       <Navbar toggleSidebar={toggleSidebar} isSidebarOpen={isOpen}>

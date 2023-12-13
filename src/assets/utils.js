@@ -1,6 +1,5 @@
 import srcS from '../assets/Rectangle 137.png'
 
-
 export const navLinks = [
   {
     text: 'Home',
