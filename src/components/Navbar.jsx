@@ -4,7 +4,7 @@ import Button from './Button'
 
 import hamburger from '../assets/hamburger.svg'
 
-const Navbar = ({ isSidebarOpen, toggleSidebar, children }) => {
+const Navbar = ({ toggleSidebar, children }) => {
   return (
     <div className="flex justify-between items-center bg-bluey p-2">
       <div className="flex gap-2">
