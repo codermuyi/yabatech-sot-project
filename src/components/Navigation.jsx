@@ -11,9 +11,9 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleSidebar = () => setIsOpen((prev) => !prev)
 
-  const overlayClassName = cn('fixed inset-0 lg:hidden z-[100]', {
-    'z-1 bg-black/30': isOpen === true,
-    'z-[-10]': isOpen === false,
+  const overlayClassName = cn('fixed inset-0 lg:hidden', {
+    'z-100 bg-black/30': isOpen === true,
+    'z-[-1] transparent': isOpen === false,
   })
 
   const links = navLinks.map((link, i) => (
