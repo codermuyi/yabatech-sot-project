@@ -9,6 +9,7 @@ import Courses from './pages/Courses'
 import AdmissionRequirements from './pages/AdmissionRequirements'
 import ErrorPage from './pages/ErrorPage'
 import ContactUs from './pages/ContactUs';
+import EnterLecturerDetail from './pages/EnterLecturerDetail';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="/courses" element={<Courses />} />
       <Route path="/admission-requirements" element={<AdmissionRequirements />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/enter-lecturer" element={<EnterLecturerDetail />} />
     </Route>
   )
 )

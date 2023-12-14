@@ -50,6 +50,7 @@ export default function ContactUs() {
                 id="name"
                 type="text"
                 placeholder="Name"
+                required
               />
             </div>
             <div className="mb-4">
@@ -64,6 +65,7 @@ export default function ContactUs() {
                 id="email"
                 type="email"
                 placeholder="Email"
+                required
               />
             </div>
             <div className="mb-4">
@@ -78,6 +80,7 @@ export default function ContactUs() {
                 id="phone_number"
                 type="text"
                 placeholder="Phone Number"
+                required
               />
             </div>
             <div className="mb-4">
@@ -92,7 +95,8 @@ export default function ContactUs() {
                 name="message"
                 id="message"
                 cols="30"
-                rows="10"
+                rows="5"
+                required
               ></textarea>
             </div>
 

@@ -24,39 +24,39 @@ export const navLinks = [
 ]
 
 export const lecturers = [
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
-  {
-    name: 'Dolor Sit Amet',
-    course: 'COM 223',
-    image: srcS,
-  },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
+  // {
+  //   name: 'Dolor Sit Amet',
+  //   course: 'COM 223',
+  //   image: srcS,
+  // },
 ]
