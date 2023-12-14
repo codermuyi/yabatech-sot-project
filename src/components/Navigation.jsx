@@ -13,7 +13,7 @@ const Navigation = () => {
 
   const overlayClassName = cn('fixed inset-0 lg:hidden z-[100]', {
     'z-1 bg-black/30': isOpen === true,
-    'z-[-1] transparent': isOpen === false,
+    'z-[-10]': isOpen === false,
   })
 
   const links = navLinks.map((link, i) => (
