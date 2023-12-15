@@ -1,13 +1,20 @@
+import { useState } from 'react'
 import { useMutation } from '@apollo/client'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 
 import Button from './Button'
-import { CREATE_LECTURER } from '../lib/api'
+import { CREATE_LECTURER, ALL_LECTURERS } from '../lib/api'
 
 const AddLecturerForm = () => {
-  const [addLecturer, { data, loading, error }] = useMutation(CREATE_LECTURER)
+  const [addLecturer, { data, loading, error }] = useMutation(CREATE_LECTURER, {
+    refetchQueries: () => [{
+      query: ALL_LECTURERS,
+    }],
+  })
   const navigate = useNavigate()
+  const [base64, setBase64] = useState('')
+  const [isSelectingFile, setIsSelectingFile] = useState(false)
 
   const {
     register,
@@ -15,34 +22,34 @@ const AddLecturerForm = () => {
     formState: { errors },
   } = useForm()
 
-  console.log('Is adding: ', loading)
-  console.log('Uploaded data: ', data)
-
-  async function onSubmit({ name, course, image }) {
-    await addLecturer({ variables: { name, course } })
-    navigate(0)
+  async function onSubmit({ name, course }) {
+    await addLecturer({ variables: { name, course, base64Image: base64 } })
+    navigate('/lecturer-profile')
   }
 
-  // async function upload() {
-  //   const input = document.getElementById('fileUpload')
-  //   const file = input.files[0]
+  function handleFileChange(e) {
+    const file = e.target.files[0]
 
-  //   const form = new FormData()
+    if (!file.type.includes('image')) {
+      alert('Selected file is not an image!')
+      e.target.value = ''
+      return
+    }
+    if (file.size > 2097152) {
+      alert('File is too big!')
+      e.target.value = ''
+      return
+    }
 
-  //   form.append('fileUpload', file)
+    const reader = new FileReader()
+    setIsSelectingFile(true)
 
-  //   const response = await fetch(`${HYGRAPH_URL}/upload`, {
-  //     method: 'POST',
-  //     headers: {
-  //       Authorization: `Bearer ${HYGRAPH_ASSET_TOKEN}`,
-  //     },
-  //     body: form,
-  //   })
-
-  //   const data = await response.json()
-  //   console.log(JSON.stringify(data, null, 2))
-  //   return data
-  // }
+    reader.onloadend = () => {
+      setIsSelectingFile(false)
+      setBase64(reader.result)
+    }
+    reader.readAsDataURL(file)
+  }
 
   return (
     <div>
@@ -51,6 +58,7 @@ const AddLecturerForm = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <p className="text-xl m-2 text-center">Enter Lecturer details</p>
+        <p>Picture file size should not exceed 2MB</p>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -99,18 +107,28 @@ const AddLecturerForm = () => {
             id="image"
             type="file"
             placeholder="Image"
+            onInput={handleFileChange}
             {...register('image', {
-              // required: '*Image required',
+              required: '*Picture required',
             })}
           />
+          <p className="text-red-500 text-sm">{errors?.image?.message}</p>
+          <p>{isSelectingFile && 'Selecting file...'}</p>
+          {base64 && (
+            <img
+              className="w-32 p-2"
+              src={base64}
+              alt="Preview of selected image"
+            />
+          )}
         </div>
         <div className="flex items-center justify-between">
-          <Button className="text-white font-bold text-lg" loading>
-            Send
+          <Button className="text-white font-bold text-lg" disabled={loading}>
+            {loading ? 'Sending...' : 'Send'}
           </Button>
         </div>
       </form>
-      <p className="text-red-500">{error && 'Failed to Send'}</p>
+      <p className="text-red-500">{error && error.meesage}</p>
     </div>
   )
 }

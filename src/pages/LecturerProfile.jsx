@@ -1,11 +1,21 @@
-import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client'
 
 import LecturerCard from '../components/LecturerCard'
-import { ALL_LECTURERS } from '../lib/api';
-import AddLecturerForm from '../components/AddLecturerForm';
+import Button from '../components/Button'
+import { ALL_LECTURERS } from '../lib/api'
 
 const LecturersProfile = () => {
   const { loading, error, data } = useQuery(ALL_LECTURERS)
+
+  const content = () => {
+    if (loading) return 'Loading...'
+    if (error) return error.message || 'An error occurred while loading.'
+    if (data?.lecturers?.length > 0)
+      return data?.lecturers.map((lecturer, i) => (
+        <LecturerCard key={i} data={lecturer} />
+      ))
+    else return 'No lecturer found.'
+  }
 
   return (
     <main className="bg-secondary p-10">
@@ -13,13 +23,13 @@ const LecturersProfile = () => {
         MEET OUR LECTURERS/DEPARTMENTAL HEADS
       </h1>
       <div className="flex flex-wrap gap-5 max-w-5xl mx-auto my-14 justify-center">
-        {data
-          ? data.lecturers.map((lecturer, i) => (
-              <LecturerCard key={i} data={lecturer} />
-            ))
-          : 'No Lecturer Detail Yet'}
+        {content()}
       </div>
-      <AddLecturerForm />
+      <div className="flex justify-center">
+        <Button linkType="rel" href="/enter-lecturer">
+          Add Lecturer
+        </Button>
+      </div>
     </main>
   )
 }

@@ -1,9 +1,9 @@
-import React from 'react'
+import AddLecturerForm from '../components/AddLecturerForm';
 
 const EnterLecturerDetail = () => {
   return (
-    <main>
-      <h1>Enter Lecturer Detail</h1>
+    <main className='py-20 pb-32 bg-secondary'>
+      <AddLecturerForm />
     </main>
   )
 }
