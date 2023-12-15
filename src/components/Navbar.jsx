@@ -27,7 +27,7 @@ const Navbar = ({ toggleSidebar, children }) => {
         {children}
         <br />
         <br />
-        <Button linkType="rel" href="/contact" className="text-white">
+        <Button linkType="rel" href="/contact">
           Contact Us
         </Button>
       </div>

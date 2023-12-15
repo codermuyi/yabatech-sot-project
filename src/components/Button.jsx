@@ -21,7 +21,7 @@ const Button = forwardRef((props, ref) => {
 
   const rootClassName = twMerge(
     cn(
-      'p-3 w-32 bg-green-600 md:text-sm leading-4 inline-flex items-center transition ease-in-out duration-300 font-body text-center justify-center rounded',
+      'p-3 w-32 bg-green-600 md:text-sm leading-4 inline-flex items-center transition ease-in-out duration-300 font-body text-center justify-center rounded text-white',
       {
         'mx-auto': center,
       },
