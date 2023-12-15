@@ -20,7 +20,6 @@ const Sidebar = ({ isOpen, toggle, children, setIsOpen }) => {
         <Button
           linkType="rel"
           href="/contact"
-          className="text-white"
           center
           onClick={() => setIsOpen(false)}
         >
