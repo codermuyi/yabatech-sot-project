@@ -29,13 +29,7 @@ export default function Home() {
       </div>
       <div className="py-10 px-5 text-primary lg:grid lg:grid-cols-2 lg:content-center lg:px-20 max-w-[85rem] mx-auto">
         <div className="max-w-2xl mx-auto">
-          <h2
-            className="font-bold text-3xl text-center pb-5 lg:text-left"
-            style={textStrokeStyle}
-          >
-            Welcome Message
-          </h2>
-          <p className="">
+          <p>
             The HND programme was accredited in 2000. The Department is one of
             the fastest growing departments in the College in the School of
             Technology. Apart from running both ND and HND programmes, the
