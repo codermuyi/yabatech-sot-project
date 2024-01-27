@@ -6,6 +6,7 @@ export const ALL_LECTURERS = gql`
       name
       course
       base64Image
+      slug
     }
   }
 `
@@ -17,6 +18,18 @@ export const CREATE_LECTURER = gql`
       name
       course
       base64Image
+    }
+  }
+`
+
+export const GET_LECTURER = gql`
+  query ($slug: String!) {
+    lecturer(stage: DRAFT, where: {slug: $slug}) {
+      name
+      course
+      base64Image
+      qualification
+      specialization
     }
   }
 `
