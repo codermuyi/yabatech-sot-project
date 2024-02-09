@@ -10,6 +10,7 @@ import AdmissionRequirements from './pages/AdmissionRequirements'
 import ErrorPage from './pages/ErrorPage'
 import ContactUs from './pages/ContactUs';
 import EnterLecturerDetail from './pages/EnterLecturerDetail';
+import Lecturer from './pages/Lecturer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/admission-requirements" element={<AdmissionRequirements />} />
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/enter-lecturer" element={<EnterLecturerDetail />} />
+      <Route path="/lecturer/:slug" action={({ params }) => {}} element={<Lecturer />} />
     </Route>
   )
 )

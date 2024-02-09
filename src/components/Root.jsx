@@ -7,7 +7,9 @@ const Root = () => {
   return (
     <>
       <Navigation />
-      <Outlet />
+      <div className="mt-14 lg:mt-16">
+        <Outlet />
+      </div>
       <Footer />
       <ScrollToTop />
     </>
