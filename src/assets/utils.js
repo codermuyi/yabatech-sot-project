@@ -20,3 +20,9 @@ export const navLinks = [
     link: '/admission-requirements',
   },
 ]
+
+export function convertToSlug(text) {
+  return text.toLowerCase()
+    .replace(/[^\w ]+/g, "")
+    .replace(/ +/g, "-");
+}

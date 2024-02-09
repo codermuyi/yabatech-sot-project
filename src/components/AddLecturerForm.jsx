@@ -5,12 +5,15 @@ import { useNavigate } from 'react-router-dom'
 
 import Button from './Button'
 import { CREATE_LECTURER, ALL_LECTURERS } from '../lib/api'
+import { convertToSlug } from '../assets/utils'
 
 const AddLecturerForm = () => {
   const [addLecturer, { data, loading, error }] = useMutation(CREATE_LECTURER, {
-    refetchQueries: () => [{
-      query: ALL_LECTURERS,
-    }],
+    refetchQueries: () => [
+      {
+        query: ALL_LECTURERS,
+      },
+    ],
   })
   const navigate = useNavigate()
   const [base64, setBase64] = useState('')
@@ -22,8 +25,17 @@ const AddLecturerForm = () => {
     formState: { errors },
   } = useForm()
 
-  async function onSubmit({ name, course }) {
-    await addLecturer({ variables: { name, course, base64Image: base64 } })
+  async function onSubmit({ name, course, qualification, specialization }) {
+    await addLecturer({
+      variables: {
+        name,
+        course,
+        base64Image: base64,
+        qualification,
+        specialization,
+        slug: convertToSlug(name),
+      },
+    })
     navigate('/lecturer-profile')
   }
 
@@ -121,6 +133,42 @@ const AddLecturerForm = () => {
               alt="Preview of selected image"
             />
           )}
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="qualification"
+          >
+            Qualifications
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="qualification"
+            type="text"
+            placeholder="Qualifications"
+            {...register('qualification', {
+              required: '*Qualifications required',
+            })}
+          />
+          <p className="text-red-500 text-sm">{errors?.name?.message}</p>
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="specialization"
+          >
+            Area of specialization
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="specialization"
+            type="text"
+            placeholder="Specialization"
+            {...register('specialization', {
+              required: '*Specialization required',
+            })}
+          />
+          <p className="text-red-500 text-sm">{errors?.name?.message}</p>
         </div>
         <div className="flex items-center justify-between">
           <Button className="text-white font-bold text-lg" disabled={loading}>
