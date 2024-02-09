@@ -11,9 +11,6 @@ const Lecturer = () => {
     variables: { slug },
   })
 
-  console.log('Loading => ', loading)
-  console.log('Error => ', error)
-
   return (
     <main className="bg-secondary p-10 bg-[url(/logo-bg.png)] bg-[size:80%] bg-[position:center] min-h-[80vh]">
       {!loading ? (
