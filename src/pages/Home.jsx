@@ -58,13 +58,13 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-3 justify-center items-center p-10">
           <img
-            src="/images/demo-hod.png"
+            src="/images/hod.png"
             alt="Head of Department"
-            className="w-68"
+            className="w-68 rounded-xl"
           />
           <div className="text-center">
             <p className="font-bold">HOD's Desk</p>
-            <p>Mr. Lorem ipsum dolor</p>
+            <p>Dr Rufai M. M.</p>
           </div>
         </div>
       </div>
